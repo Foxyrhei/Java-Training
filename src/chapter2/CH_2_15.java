@@ -7,8 +7,7 @@ shown in Fig. 2.7
 import java.util.Scanner;
 
 public class CH_2_15 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // create a Scanner to obtain input from the command window
         Scanner input = new Scanner(System.in);
 

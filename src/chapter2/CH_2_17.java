@@ -5,10 +5,11 @@ shown in Fig. 2.15. [Note: The calculation of the average in this exercise shoul
 representation of the average. So, if the sum of the values is 7, the average should be 2, not
 2.3333….]
  */
+
 import java.util.Scanner;
+
 public class CH_2_17 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // create a Scanner to obtain input from the command window
         Scanner input = new Scanner(System.in);
 

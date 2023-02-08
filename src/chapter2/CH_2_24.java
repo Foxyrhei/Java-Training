@@ -3,10 +3,11 @@ package chapter2;/*
 and prints the largest and smallest integers in the group. Use only the programming techniques you
 learned in this chapter.
  */
+
 import java.util.Scanner;
+
 public class CH_2_24 {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         // create a Scanner to obtain input from the command window
         Scanner input = new Scanner(System.in);
 
@@ -44,9 +45,10 @@ public class CH_2_24 {
         if (number4 < smallest) {
             smallest = number4;
 
-        }if (number5 < smallest) {
-        smallest = number5;
-    }
+        }
+        if (number5 < smallest) {
+            smallest = number5;
+        }
         if (number2 > largest) {
             largest = number2;
         }
