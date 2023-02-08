@@ -1,4 +1,4 @@
-
+package chapter2;
 
 /*
 (Comparing Integers) Write an application that asks the user to enter two integers, obtains
