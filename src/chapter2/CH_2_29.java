@@ -1,4 +1,5 @@
 package chapter2;
+
 /*
 (Integer Value of a Character) Here’s another peek ahead. In this chapter, you learned about
 integers and the type int. Java can also represent uppercase letters, lowercase letters and a considerable variety of special symbols.
