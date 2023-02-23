@@ -33,17 +33,15 @@ public class Date {
     public void setDay(Integer day) {
         if (day > 0 && day <= 31) {
             this.day = day;
-        }
-        else {
+        } else {
             System.out.println("Invalid day");
         }
     }
 
     public void setMonth(Integer month) {
         if (month > 0 && month <= 12) {
-                this.month = month;
-        }
-        else {
+            this.month = month;
+        } else {
             System.out.println("Invalid month");
         }
     }
@@ -51,8 +49,7 @@ public class Date {
     public void setYear(Integer year) {
         if (year > 0) {
             this.year = year;
-        }
-        else {
+        } else {
             System.out.println("Invalid year");
         }
     }
