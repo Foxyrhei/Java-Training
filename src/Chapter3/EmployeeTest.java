@@ -19,13 +19,15 @@ public class EmployeeTest {
         Employee employee1 = new Employee("Duke", "Nukem", 5000.00);
         Employee employee2 = new Employee("B.J.", "Blazkowicz", 7000.00);
 
-        System.out.printf("%s%.2f%n", "Employee 1 Annual Salary: ", employee1.getAnnualSalary());
-        System.out.printf("%s%.2f%n", "Employee 2 Annual Salary: ", employee2.getAnnualSalary());
-        System.out.printf("%s%.2f%n", "Employee 1 Raised Annual Salary: ", employee1.getAnnualSalaryRaised());
-        System.out.printf("%s%.2f%n", "Employee 1 Raised Annual Salary: ", employee2.getAnnualSalaryRaised());
+        System.out.printf("%s%.2f%n", "Employee 1 Annual Salary: ", 12 * employee1.getMonthlySalary());
+        System.out.printf("%s%.2f%n", "Employee 2 Annual Salary: ", 12 * employee2.getMonthlySalary());
+        employee1.setMonthlySalary(employee1.getMonthlySalary() * 1.1);
+        employee2.setMonthlySalary(employee2.getMonthlySalary() * 1.1);
+        System.out.printf("%s%.2f%n", "Employee 1 Raised Annual Salary: ", 12 * employee1.getMonthlySalary());
+        System.out.printf("%s%.2f%n", "Employee 2 Raised Annual Salary: ", 12 * employee2.getMonthlySalary());
 
         employee1.setMonthlySalary(-20.00);
-        System.out.printf("%s%.2f%n", "Employee 1 Annual Salary: ", employee1.getAnnualSalary());
-        System.out.printf("%s%.2f%n", "Employee 1 Raised Annual Salary: ", employee1.getAnnualSalaryRaised());
+        System.out.printf("%s%.2f%n", "Employee 1 Annual Salary: ", 12 * employee1.getMonthlySalary());
+        System.out.printf("%s%.2f%n", "Employee 1 Raised Annual Salary: ", 12 * 1.1 * employee1.getMonthlySalary());
     }
 }

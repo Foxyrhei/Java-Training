@@ -24,17 +24,7 @@ public class Employee {
     public Employee(String firstName, String lastName, Double monthlySalary) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.monthlySalary = monthlySalary;
-    }
-
-    //Annual salary calculation
-    public Double getAnnualSalary() {
-        return 12 * monthlySalary;
-    }
-
-    //Raised Annual Salary calculation
-    public Double getAnnualSalaryRaised() {
-        return 12 * monthlySalary * 1.1;
+        setMonthlySalary(monthlySalary);
     }
 
     //Set method
