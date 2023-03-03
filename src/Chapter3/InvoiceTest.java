@@ -38,7 +38,6 @@ public class InvoiceTest {
 
         Invoice testInvoice = new Invoice(partnumber, description, quantity, price);
 
-        testInvoice.getInvoiceAmount();
         System.out.println(testInvoice.getInvoiceAmount());
 
         testInvoice.setQuantity(10);

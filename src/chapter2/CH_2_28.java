@@ -33,8 +33,6 @@ public class CH_2_28 {
         //System.out.println("Diameter is " + 2*radius);
         System.out.println("Diameter is " + 2 * radius);
         System.out.printf("Circumference is %f%n", 2 * (Math.PI * radius)); //printf + %f for float + %n for new line
-        System.out.printf("Area is %f%n", Math.PI * (radius * radius));
-
-
+        System.out.printf("Area is %f%n", Math.PI * (Math.pow (radius,2)));
     }
 }

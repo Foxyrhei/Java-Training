@@ -33,7 +33,7 @@ public class Invoice {
 
     public double getInvoiceAmount() {
 
-        return quantity * price;
+        return getQuantity() * getPrice();
 
     }
 

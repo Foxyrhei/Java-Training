@@ -13,12 +13,12 @@ Write a test app named DateTest that demonstrates class Date’s capabilities.
  */
 public class Date {
     //Instance variables
-    private Integer day;
-    private Integer month;
-    private Integer year;
+    private int day;
+    private int month;
+    private int year;
 
     //Constructor
-    public Date(Integer day, Integer month, Integer year) {
+    public Date(int day, int month, int year) {
         setDay(day);
         setMonth(month);
         setYear(year);
@@ -26,11 +26,11 @@ public class Date {
 
     //method displayDate
     void displayDate() {
-        System.out.printf("%s/%s/%s", getDay(), getMonth(), getYear());
+        System.out.printf("%d/%d/%d", getDay(), getMonth(), getYear());
     }
 
     // Set method
-    public void setDay(Integer day) {
+    public void setDay(int day) {
         if (day > 0 && day <= 31) {
             this.day = day;
         } else {
@@ -38,7 +38,7 @@ public class Date {
         }
     }
 
-    public void setMonth(Integer month) {
+    public void setMonth(int month) {
         if (month > 0 && month <= 12) {
             this.month = month;
         } else {
@@ -46,7 +46,7 @@ public class Date {
         }
     }
 
-    public void setYear(Integer year) {
+    public void setYear(int year) {
         if (year > 0) {
             this.year = year;
         } else {
@@ -55,15 +55,15 @@ public class Date {
     }
 
     // Get method
-    public Integer getDay() {
+    public int getDay() {
         return day;
     }
 
-    public Integer getMonth() {
+    public int getMonth() {
         return month;
     }
 
-    public Integer getYear() {
+    public int getYear() {
         return year;
     }
 }

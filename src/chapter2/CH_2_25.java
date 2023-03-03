@@ -20,13 +20,9 @@ public class CH_2_25 {
         System.out.print("Enter integer: "); // prompt
         number1 = input.nextInt(); // read first number from user
 
-        rem = number1 % 2; // remainder calculation
-
-        if (rem == 0) {
+        if ((number1 % 2) == 0) {
             System.out.print(number1 + " is an even integer"); //if there is no remainder then it's even
-        }
-
-        if (rem != 0) {
+        } else {
             System.out.print(number1 + " is an odd integer"); //if there is a remainder then it's odd
         }
     }
