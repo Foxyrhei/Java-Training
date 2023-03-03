@@ -23,13 +23,19 @@ public class Account {
             this.balance = balance; // assign it to instance variable balance
     }
 
+    // method that deposits (adds) only a valid amount to the balance
+    public void deposit(double depositAmount)
+    {
+        if (depositAmount > 0.0) // if the depositAmount is valid
+            balance = balance + depositAmount; // add it to the balance
+    }
 
-    // debit (subtract)an amount to the account
-    public void deposit(double depositAmount) {
-        if (depositAmount > balance)
-            System.out.println("Debit amount exceeded account balance\n");
+    // debit (subtract) an amount from the the account
+    public void withdraw(double withdrawAmount) {
+        if (withdrawAmount > balance)
+            System.out.println("Withdrawal amount exceeded account balance.\n");
         else
-            balance = balance - depositAmount;
+            balance = balance - withdrawAmount;
     }
 
     // method returns the account balance
