@@ -30,7 +30,7 @@ public class Account {
             balance = balance + depositAmount; // add it to the balance
     }
 
-    // debit (subtract) an amount from the the account
+    // debit (subtract) an amount from the account
     public void withdraw(double withdrawAmount) {
         if (withdrawAmount > balance)
             System.out.println("Withdrawal amount exceeded account balance.\n");
