@@ -8,7 +8,6 @@ If the number is not five digits long, display an error message and allow the us
 a new value.
  */
 
-//Don't know how to correctly show messages for not palindrome
 
 import java.util.Scanner;
 
@@ -57,7 +56,6 @@ public class CH_4_30 {
                 divisor = divisor / 100;
                 if (n == 0) {System.out.printf("Palindrome");}
             }
-            //System.out.printf("Palindrome");
         }
 
     }
