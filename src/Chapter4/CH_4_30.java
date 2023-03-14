@@ -55,8 +55,9 @@ public class CH_4_30 {
                 // Reducing divisor by a factor
                 // of 2 as 2 digits are dropped
                 divisor = divisor / 100;
+                if (n == 0) {System.out.printf("Palindrome");}
             }
-            System.out.printf("Palindrome");
+            //System.out.printf("Palindrome");
         }
 
     }
