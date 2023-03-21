@@ -10,28 +10,25 @@ public class CH_5_11 {
     public static void main(String[] args) {
 
         int n;
-        int number;
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
+        int number = 0;
+        int max = 0;
 
         Scanner input = new Scanner(System.in);
 
         System.out.printf("Enter number of values to be compared: %n");
         n = input.nextInt();
 
-        for (int counter = 1; counter <= n; counter++) {
+        for (int counter = 1; counter < n; counter++) {
             System.out.printf("Enter value: %n");
             number = input.nextInt();
-            if (number > max) {
+
+            if (n < number) {
                 max = number;
             }
-
-            if (number < min) {
-                min = number;
-            }
-
+            else {
+            max = n;}
         }
-        System.out.printf("Smallest number is: %d", +min);
+        System.out.printf("Largest number is: %d", max);
 
     }
 }
