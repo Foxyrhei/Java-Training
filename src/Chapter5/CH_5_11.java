@@ -11,7 +11,7 @@ public class CH_5_11 {
 
         int n;
         int number = 0;
-        int max = 0;
+        int min = 0;
 
         Scanner input = new Scanner(System.in);
 
@@ -22,13 +22,11 @@ public class CH_5_11 {
             System.out.printf("Enter value: %n");
             number = input.nextInt();
 
-            if (n < number) {
-                max = number;
+            if (min > number) {
+                min = number;
             }
-            else {
-            max = n;}
         }
-        System.out.printf("Largest number is: %d", max);
+        System.out.printf("Lowest number is: %d", min);
 
     }
 }
