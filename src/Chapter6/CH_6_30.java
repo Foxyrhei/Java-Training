@@ -10,5 +10,34 @@ guessed the number!, and allow the user to choose whether to play again.
 [Note: The guessing technique employed in this problem is similar to a binary search, which is discussed in Chapter 19,
 Searching, Sorting and Big O.]
  */
+
+import java.util.Scanner;
+import java.security.SecureRandom;
+
 public class CH_6_30 {
+    public static void main(String[] args) {
+        SecureRandom randomNumber = new SecureRandom();
+        Scanner input = new Scanner(System.in);
+
+        int generatedNumber = 1 + randomNumber.nextInt(1000);
+
+        System.out.printf("Generated number: %d%n", generatedNumber); // For debugging purpose
+
+        System.out.printf("Guess a number between 1 and 1000:");
+
+        while (input.hasNext()) {
+            int number = input.nextInt();
+
+            if (number > generatedNumber) {
+                System.out.printf("Too high, try again!%n");
+            } else if (number < generatedNumber) {
+                System.out.printf("Too low, try again!%n");
+            } else {
+                System.out.printf("Congratulations. You guessed the number!!");
+                break;
+            }
+        }
+    }
+
 }
+
