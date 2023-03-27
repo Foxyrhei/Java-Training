@@ -31,13 +31,12 @@ public class CH_6_21 {
     }
 
     public static int quotient(int a, int b) {
-        int quotient = a / b;
-        return quotient;
+        return a / b;
     }
 
     public static int remainder(int a, int b) {
-        int remainder = a % b;
-        return remainder;
+        return a % b;
+
     }
 
     public static void displayDigits(int c) {
