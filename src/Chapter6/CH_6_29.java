@@ -8,29 +8,67 @@ simulates coin tossing, each side of the coin should appear approximately half t
  */
 
 import java.security.SecureRandom;
+import java.util.Scanner;
 
 public class CH_6_29 {
+
+    private static final SecureRandom random = new SecureRandom();
+
+    private enum coinSide {HEADS, TAILS}
+
+
     public static void main(String[] args) {
-        flip();
-    }
+        Scanner scanner = new Scanner(System.in);
 
+        int headsCount = 0;
+        int tailsCount = 0;
 
-    public static void flip() {
-        SecureRandom randomFlips = new SecureRandom();
-        int heads = 0;
-        int tails = 0;
-        for (int flip = 1; flip <= 5000; flip++) {
-            int face = 1 + randomFlips.nextInt(2);
-            switch (face) {
+        String message = "Options Menu\n" + "1 - Toss Coin\n" + "2 - Display the results\n" + "9 - To quit\n"
+                + "Enter an option: ";
+
+        int option = 0;
+
+        while (option != 9) {
+            System.out.print(message);
+            option = scanner.nextInt();
+
+            switch (option) {
                 case 1:
-                    ++heads;
+                    if (flip() == coinSide.HEADS)
+                        headsCount++;
+                    else
+                        tailsCount++;
                     break;
                 case 2:
-                    ++tails;
+                    displayResults(headsCount, tailsCount);
                     break;
+                case 9:
+                    break;
+                default:
+                    System.err.println("\nInvalid option. Try again\n");
             }
         }
-        System.out.println("Face Frequency");
-        System.out.printf("1\t%d%n2\t%d", heads, tails);
+        scanner.close();
     }
+
+    public static void displayResults(int headsCount, int tailsCount) {
+        System.out.println("\t Results");
+        System.out.printf("\tHEADS TAILS%n");
+        System.out.printf("\t%3d %4d%n", headsCount, tailsCount);
+    }
+
+
+    public static coinSide flip() {
+        return random.nextInt(2) == 0 ? coinSide.HEADS : coinSide.TAILS;
+    }
+
 }
+
+
+
+
+
+
+
+
+
