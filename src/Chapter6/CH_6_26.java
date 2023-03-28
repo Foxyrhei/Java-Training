@@ -23,6 +23,6 @@ public class CH_6_26 {
             int remainder = number % 10;
             reverse = reverse * 10 + remainder;
         }
-        System.out.println("The reverse of the given number is: " + reverse);
+        System.out.printf("The reverse of the given number is: %d", reverse);
     }
 }
