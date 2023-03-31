@@ -23,7 +23,7 @@ public class CH_4_36 {
 
         if ((sideA > 0) && (sideB > 0) && (sideC > 0)) {
             //All 3 sides should be equal in right triangle
-            if ((sideA == sideB) && (sideB == sideC)) {
+            if ((sideA == sideB) && (sideB == sideC)) { //a pow 2 = b pow 2 + c pow 2
                 System.out.printf("Values can represent the sides of a right triangle");
             } else {
                 System.out.printf("Values can not represent the sides of a right triangle");

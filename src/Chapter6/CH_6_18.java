@@ -25,7 +25,7 @@ public class CH_6_18 {
     public static void squareOfAsterisks(int a) {
         for (int j = 1; j <= a; j++) {
             for (int i = 1; i <= a; i++) {
-                System.out.printf("*");
+                System.out.printf("* ");
             }
             System.out.println();
         }

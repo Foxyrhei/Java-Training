@@ -34,7 +34,7 @@ public class CreditLimitCalc {
 public double displayInfo(){
         double newBalance = (getBalance()+getAllItems()-getAllCredits());
                 System.out.printf("Account new balance is: %.2f%n",newBalance);
-        if (newBalance < 0){
+        if (newBalance < creditLimit){
             System.out.println("Credit limit exceeded");
         }
         return newBalance;

@@ -25,11 +25,11 @@ public class CH_4_24 {
             // if...else is nested in the while statement
             if (result == 1) {
                 passes = passes + 1;
-                studentCounter = studentCounter + 1;
+                studentCounter++;
             }
             if (result == 2) {
                 failures = failures + 1;
-                studentCounter = studentCounter + 1;
+                studentCounter++;
             }
         }
 

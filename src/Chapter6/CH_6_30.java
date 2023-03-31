@@ -21,7 +21,7 @@ public class CH_6_30 {
 
         int generatedNumber = 1 + randomNumber.nextInt(1000);
 
- //       System.out.printf("Generated number: %d%n", generatedNumber); // For debugging purpose
+   //    System.out.printf("Generated number: %d%n", generatedNumber); // For debugging purpose
 
         System.out.printf("Guess a number between 1 and 1000:");
 

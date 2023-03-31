@@ -14,7 +14,7 @@ public class CH_6_29 {
 
     private static final SecureRandom random = new SecureRandom();
 
-    private enum coinSide {HEADS, TAILS}
+    private enum CoinSide {HEADS, TAILS}
 
 
     public static void main(String[] args) {
@@ -34,7 +34,7 @@ public class CH_6_29 {
 
             switch (option) {
                 case 1:
-                    if (flip() == coinSide.HEADS)
+                    if (flip() == CoinSide.HEADS)
                         headsCount++;
                     else
                         tailsCount++;
@@ -58,8 +58,8 @@ public class CH_6_29 {
     }
 
 
-    public static coinSide flip() {
-        return random.nextInt(2) == 0 ? coinSide.HEADS : coinSide.TAILS;
+    public static CoinSide flip() {
+        return random.nextBoolean() ? CoinSide.HEADS : CoinSide.TAILS;
     }
 
 }

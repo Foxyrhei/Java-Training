@@ -36,7 +36,6 @@ public class CH_6_21 {
 
     public static int remainder(int a, int b) {
         return a % b;
-
     }
 
     public static void displayDigits(int c) {

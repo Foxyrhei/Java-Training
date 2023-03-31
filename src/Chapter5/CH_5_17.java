@@ -19,53 +19,41 @@ import java.util.Scanner;
 public class CH_5_17 {
     public static void main(String[] args) {
 
-
         int n, q;
-        int totalCounter = 0;
         double total = 0;
-        double aCount = 0;
-        double bCount = 0;
-        double cCount = 0;
-        double dCount = 0;
-        double fCount = 0;
-
-        System.out.printf("Press Ctrl + D for exit%n");
 
         Scanner input = new Scanner(System.in);
 
+        System.out.printf("Enter product number (1-5) or -1 to Quit: %n");
+        n = input.nextInt();
 
-        System.out.printf("Enter product number: %n");
-        while (input.hasNext()) {
-            n = input.nextInt();
+        while (n != -1) {
 
             System.out.printf("Enter quantity: %n");
             q = input.nextInt();
 
-            total = aCount + bCount + cCount + dCount + fCount;
-            totalCounter++;
-
             switch (n) {
                 case 1:
-                    aCount = q * 2.98;
+                    total = total + (q * 2.98);
                     break;
                 case 2:
-                    bCount = q * 4.50;
+                    total = total + (q * 4.50);
                     break;
                 case 3:
-                    cCount = q * 9.98;
+                    total = total + (q * 9.98);
                     break;
                 case 4:
-                    dCount = q * 4.49;
+                    total = total + (q * 4.49);
                     break;
                 case 5:
-                    fCount = q * 6.87;
+                    total = total + (q * 6.87);
                     break;
                 default:
                     System.out.printf("Incorrect product number%n");
             }
+            System.out.printf("Enter product number (1-5) or -1 to Quit: %n");
+            n = input.nextInt();
         }
-        if (totalCounter != 0) {
-            System.out.printf("Total sum is: %.2f", total);
-        }
+        System.out.printf("Total sum is: %.2f", total);
     }
 }

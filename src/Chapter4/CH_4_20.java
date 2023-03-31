@@ -15,16 +15,10 @@ public class CH_4_20 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        String employeeName;
         double hoursWorked;
         double rate = 0;
         double overtime;
         double grossPay;
-        int employeeCounter = 0;
-
-
-        System.out.printf("Enter employee name%n");
-        employeeName = input.next();
 
         System.out.printf("Enter number of hours worked last week %n(type -1 to quit)%n");
         hoursWorked = input.nextDouble();
@@ -39,30 +33,17 @@ public class CH_4_20 {
                 overtime = hoursWorked - 40;
                 grossPay = (40 * rate) + (overtime * 1.5 * rate);
                 System.out.printf("Employee's gross pay is: %.2f%n", grossPay);
-
-                System.out.printf("Enter employee name%n");
-                employeeName = input.next();
-
-                System.out.printf("Enter number of hours worked last week %n(type -1 to quit)%n");
-                hoursWorked = input.nextDouble();
-
             }
             else if (hoursWorked <= 40){
                 grossPay = hoursWorked * rate;
                 System.out.printf("Employee's gross pay is: %.2f%n", grossPay);
-                System.out.printf("Enter employee name%n");
-                employeeName = input.next();
-
-                System.out.printf("Enter number of hours worked last week %n(type -1 to quit)%n");
-                hoursWorked = input.nextDouble();
             }
             else {
                 System.out.printf("No data entered");
             }
+
+            System.out.printf("Enter number of hours worked last week %n(type -1 to quit)%n");
+            hoursWorked = input.nextDouble();
         }
-
-
-
-
     }
 }

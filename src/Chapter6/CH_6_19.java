@@ -32,7 +32,7 @@ public class CH_6_19 {
     public static void squareOfAsterisks(int a, char fill) {
         for (int j = 1; j <= a; j++) {
             for (int i = 1; i <= a; i++) {
-                System.out.printf("%c", fill);
+                System.out.printf("%c ", fill);
             }
             System.out.println();
         }

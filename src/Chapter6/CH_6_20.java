@@ -18,7 +18,6 @@ public class CH_6_20 {
     }
 
     public static double circleArea(double r) {
-        double area = Math.PI * Math.pow(r, 2);
-        return area;
+        return Math.PI * Math.pow(r, 2);
     }
 }

@@ -19,7 +19,7 @@ public class CH_4_29 {
 
         for (columnCount = 1; columnCount <= n; columnCount++) {
             for (rowCount = 1; rowCount <= n; rowCount++) {
-                System.out.printf("*");
+                System.out.printf("* ");
             }
             System.out.printf("\n");
         }

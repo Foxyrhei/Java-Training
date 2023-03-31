@@ -17,7 +17,7 @@ public class CH_4_22 {
         System.out.printf("N\t10*N\t100*N\t1000*N%n");
 
         while(counter <= 5){
-            System.out.printf("%d\t%d\t\t%d\t\t%d%n", counter,(counter*10),(counter*100),(counter*1000));
+            System.out.printf("%d%10d%10d%10d%n", counter,(counter*10),(counter*100),(counter*1000));
             counter++;
         }
     }

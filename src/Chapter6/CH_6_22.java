@@ -35,14 +35,6 @@ public class CH_6_22 {
             default:
                 System.out.printf("Incorrect unit selection");
         }
-
-//        if (value == 'C') {
-        //           System.out.printf("Fahrenheit equivalent is: %.2f%n", fahrenheit(temp));
-//        } else if (value == 'F') {
-        //           System.out.printf("Celsius equivalent is: %.2f%n", celsius(temp));
-        //       } else {
-        //           System.out.printf("Incorrect unit selection");
-//        }
     }
 
     public static double celsius(double temp) {

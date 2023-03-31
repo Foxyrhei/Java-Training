@@ -26,7 +26,6 @@ public class CH_6_15 {
     }
 
     public static double calculation(double sideA, double sideB) {
-        double hypotenuse = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
-        return hypotenuse;
+        return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
     }
 }

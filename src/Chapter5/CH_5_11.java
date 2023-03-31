@@ -11,7 +11,7 @@ public class CH_5_11 {
 
         int n;
         int number = 0;
-        int min = 0;
+        int min = Integer.MAX_VALUE;
 
         Scanner input = new Scanner(System.in);
 

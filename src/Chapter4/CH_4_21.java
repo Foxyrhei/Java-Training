@@ -33,18 +33,16 @@ import java.util.Scanner;
 public class CH_4_21 {
     public static void main(String[] args) {
         int inputCounter = 1;
-        int number = 0;
         int largest = 0;
 
         Scanner input = new Scanner(System.in);
 
         while (inputCounter <= 10) {
             System.out.printf("Enter number%n");
-            number = input.nextInt();
+            int number = input.nextInt();
             if (number > largest) {
                 largest = number;
             }
-            largest = largest;
             inputCounter++;
         }
         System.out.printf("Largest number is: %d", largest);

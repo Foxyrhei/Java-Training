@@ -52,6 +52,8 @@ public class CH_4_17 {
             double totalConsumption = (100 * totalLiters) / totalKilometers;
 
             System.out.printf("%n%n%nAverage consumption for all trips is %.2f%n", totalConsumption);
-        } else System.out.println("No values were entered");
+        } else {
+            System.out.println("No values were entered");
+        }
     }
 }
