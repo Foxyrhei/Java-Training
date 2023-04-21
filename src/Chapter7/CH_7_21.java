@@ -60,7 +60,7 @@ public class CH_7_21 {
                     penDown = true;
                 } else if (command == 3) { // Turn right
                     direction = (direction + 1) % 4;
-                } else if (command == 4) { // 032m nt5rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrTurn lef^Y$
+                } else if (command == 4) { //Turn left
                     direction = (direction + 3) % 4;
                 } else if (command == 5) { // Move forward
                     int distance = commands[i];
